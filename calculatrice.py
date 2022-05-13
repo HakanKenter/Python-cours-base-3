@@ -19,6 +19,10 @@ button_8 = tk.Button(root, text="8", padx=40, pady=20)
 button_9 = tk.Button(root, text="9", padx=40, pady=20)
 button_0 = tk.Button(root, text="0", padx=40, pady=20)
 button_c = tk.Button(root, text="C", padx=40, pady=20)
+button_plus = tk.Button(root, text="+", padx=40, pady=20)
+button_moin = tk.Button(root, text="-", padx=40, pady=20)
+button_division = tk.Button(root, text="/", padx=40, pady=20)
+button_e = tk.Button(root, text="=", padx=40, pady=20)
 
 button_1.grid()
 
