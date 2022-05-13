@@ -1,21 +1,21 @@
-import argparse
+﻿import argparse
 import csv
+from ctypes import sizeof
 
-parser = argparse.ArgumentParser(description="Exemple d'utilisation d'argument parser.")
-parser.add_argument("-f", "--file", dest="filename", default="data/survey-financial.csv")
+parser = argparse.ArgumentParser(
+    description="Exemple de manipulation de csv file.")
+parser.add_argument("-f", "--file", dest="filename",
+                    default="data/survey-financial.csv")
 
 args = parser.parse_args()
 
-# print(args)
+# print(args.filename)
 f = open(args.filename, "r")
 reader = csv.reader(f)
 
 print(dir(reader))
-# print(sizeof(reader))
 
 for row in reader:
-    for item in row:
-        print(item)
+    print(row)
 
 f.close()
-print("Done")

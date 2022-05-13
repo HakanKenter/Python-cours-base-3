@@ -1,11 +1,12 @@
 #!/usr/bin/env/python3
 
-def fline(x , m =1 , b =0): # f ( x) = m* x + b
-    return m *x + b
-for i in range (5):
-    print ( fline (i ) , end = " " )
-# f or c e newl i ne
-print ()
+print("Heeey je tourne !")
 
-for i in range (5):
-    print ( fline (i , -1 ,1) , end = " " )
+
+def add(a, b):
+    return a + b
+
+
+# appel de la fonction
+s = add(3, 4)
+print("la somme = ", s)

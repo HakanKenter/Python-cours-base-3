@@ -1,9 +1,9 @@
-import sqlite3
+﻿import sqlite3
 
-conn = sqlite3.connect("/data/bla.db")
+conn = sqlite3.connect("./data/departement.db")
 c = conn.cursor()
 
-# c.execute("""CREATE TABLE Friends (firstname TEXT, lastname TEXT)""")
+c.execute("""CREATE TABLE Friends (firstname TEXT, lastname TEXT)""")
 c.execute("""INSERT INTO Friends VALUES ("Davy", "Lucas")""")
 conn.commit()
 

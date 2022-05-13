@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+﻿#!/usr/bin/env/python3
+
 
 def square(x):
     if type(x) == int or type(x) == float:
@@ -6,5 +7,6 @@ def square(x):
     else:
         return None
 
-nbre = input("Entrer votre nombre : ");
+
+nbre = input("Entrer votre nombre : ")
 square(nbre)
